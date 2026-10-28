@@ -1,6 +1,5 @@
-import Link from 'next/link';
 import { signOut } from '@/app/actions';
-import { BoxIcon, KeyIcon, LogoutIcon, PersonIcon } from './Icons';
+import { BoxIcon, LogoutIcon } from './Icons';
 import type { Profile } from '@/lib/types';
 
 export function TopBar({ profile }: { profile: Profile }) {
@@ -26,16 +25,6 @@ export function TopBar({ profile }: { profile: Profile }) {
               <small>{profile.username}</small>
             </span>
           </div>
-          {isManager && (
-            <Link href="/employee" className="btn-ghost-dark" aria-label="מסך עובד">
-              <PersonIcon size={18} />
-              <span className="lbl">מסך עובד</span>
-            </Link>
-          )}
-          <Link href="/password" className="btn-ghost-dark" aria-label="שינוי סיסמה">
-            <KeyIcon size={18} />
-            <span className="lbl">סיסמה</span>
-          </Link>
           <form action={signOut}>
             <button type="submit" className="btn-ghost-dark" aria-label="יציאה">
               <LogoutIcon size={18} />

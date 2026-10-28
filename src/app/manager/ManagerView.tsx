@@ -299,7 +299,7 @@ export function ManagerView({ me, products, txs, people, reports, weekSummary, w
           onClose={() => setDlg(null)}
           footer={<button type="button" className="btn btn-dark btn-lg grow" onClick={() => setDlg(null)}>העברתי לעובד</button>}
         >
-          <p style={{ margin: 0 }}>מסרו לעובד את פרטי הכניסה. הסיסמה מוצגת פעם אחת בלבד – הוא יוכל להחליף אותה ב״סיסמה״ בראש המסך.</p>
+          <p style={{ margin: 0 }}>מסרו לעובד את פרטי הכניסה. הסיסמה מוצגת פעם אחת בלבד – כדאי לרשום אותה עכשיו.</p>
           <div className="panel" style={{ padding: 16, display: 'grid', gap: 8 }}>
             <div>שם משתמש: <b className="mono" dir="ltr">{dlg.username}</b></div>
             <div>סיסמה: <b className="mono" dir="ltr" style={{ fontSize: 20 }}>{dlg.password}</b></div>
